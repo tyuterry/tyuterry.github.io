@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/tooltip.css">
     <script type="text/javascript" src="./js/pages/home.js"></script>
-    <script type="text/javascript" src="./js/pages/menu.js"></script>
+    <script type="text/javascript" src="./js/pages/stableStatics.js"></script>
     <script type="text/javascript" src="./js/utils/promise.js"></script>
     <script type="text/javascript" src="./js/utils/http_request.js"></script>
     <script type="text/javascript" src="./js/utils/TimeUtility.js"></script>
@@ -32,24 +32,46 @@
         id="pageMainContent"
         class="w3-container"
       >
-      <div id="menuPage">
-        <h1>選單</h1>
+      <h1>獸廄統計</h1>
+
+      <table id="stableStaticsTable" class="w3-table w3-table-all tableFixHead">
+        <thead>
+          <tr>
+            <th></th>
+            <th>1 ⭐</th>
+            <th>2 ⭐</th>
+            <th>3 ⭐</th>
+            <th>4 ⭐</th>
+            <th>5 ⭐</th>
+            <th>6 ⭐</th>
+            <th>7 ⭐</th>
+            <th>8 ⭐</th>
+            <th>9 ⭐</th>
+            <th>合計</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- ... -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>合計</th>
+            <td id="totalByStar1"></td>
+            <td id="totalByStar2"></td>
+            <td id="totalByStar3"></td>
+            <td id="totalByStar4"></td>
+            <td id="totalByStar5"></td>
+            <td id="totalByStar6"></td>
+            <td id="totalByStar7"></td>
+            <td id="totalByStar8"></td>
+            <td id="totalByStar9"></td>
+            <td id="allMonstersTotal"></td>
+          </tr>
+        </tfoot>
+      </table>
       
-        <div class="w3-container" style="max-width: 500px;">
-          <ul class="w3-ul w3-large menu-list">
-            <li id="menuHistoryItem" class="w3-hover-light-gray w3-border">
-              <div class="w3-bar w3-display-container">
-                <i class="fas fa-history"></i>
-                歷史事件
-                <span class="w3-display-right">
-                  <i class="material-icons">
-                    keyboard_arrow_right
-                  </i>
-                </span>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div id="stableStaticsSaveState" class="w3-padding">
+        已是最新
       </div>
       </div>
       <footer>

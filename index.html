@@ -2,20 +2,46 @@
 <html>
 
 <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sdorica</title>
+    <link rel="stylesheet" type="text/css" href="./css/library/w3.css">
+    <link rel="stylesheet" type="text/css" href="./css/icon.css">
+    <link rel="stylesheet" type="text/css" href="./css/History.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/StableStatics.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/tooltip.css">
     <script>
-        function go() {
-            window.location.replace("/menu.html");
+        window.onload = () => {
+        init();
         }
     </script>
+    <script type="text/javascript" src="./js/pages/home.js"></script>
+    <script type="text/javascript" src="./js/utils/promise.js"></script>
+    <script type="text/javascript" src="./js/utils/http_request.js"></script>
+    <script type="text/javascript" src="./js/utils/TimeUtility.js"></script>
+
 </head>
 
 <body>
-    <div id="homePage">
-        <h1>首頁</h1>
-    </div>
-    <button onclick="go()">
-        test
-    </button>
+    <div class="w3-bar w3-black">
+        <div id="navHomeButton" class="w3-bar-item w3-button w3-hover-red w3-mobile">首頁</div>
+        <div id="navStableStaticsButton" class="w3-bar-item w3-button w3-hover-green w3-mobile">獸廄統計</div>
+        <div id="navMonsterSkillsButton" class="w3-bar-item w3-button w3-hover-blue w3-mobile">技能統計</div>
+        <div id="navMenuButton" class="w3-bar-item w3-button w3-right">選單</div>
+      </div>
+      <div 
+        id="pageMainContent"
+        class="w3-container"
+      >
+      首頁
+      </div>
+      <footer>
+        <!-- TODO -->
+        <!-- <i class="fab fa-github" style="color: #302F2F"></i> -->
+      </footer>
 </body>
 
 </html>
